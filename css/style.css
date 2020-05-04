@@ -86,12 +86,12 @@ img {
 }
 
 .services {
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .services-title {
   text-align: center;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .services-title__item {
@@ -101,7 +101,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .services-title__description {
@@ -114,7 +114,6 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 4px;
 }
 
 .service-list-item {
@@ -196,7 +195,7 @@ img {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .contact-info-title__description {
@@ -238,8 +237,7 @@ img {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 14px;
-  padding-top: 16px;
-  padding-left: 20px;
+  padding: 16px 20px;
   border-radius: 3px;
   resize: none;
 }
@@ -264,8 +262,16 @@ img {
   outline-color: green;
 }
 
-.contact-form__input:invalid,
-.contact-form__message:invalid {
+.contact-form__input:last-child:valid {
+  outline-color: inherit;
+}
+
+.contact-form__input:last-child:invalid {
+  outline-color: inherit;
+}
+
+.contact-form__input:invalid:not(:placeholder-shown),
+.contact-form__message:invalid:not(:placeholder-shown) {
   outline-color: red;
 }
 
