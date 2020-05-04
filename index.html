@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Module-07 HomeWork</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <div class="container">
+        <nav class="navigation">
+          <a href="#" class="logo">Golden</a>
+          <ul class="navigation-list">
+            <li class="navigation-list-item"><a href="#" class="nav-list-item__link">home</a></li>
+            <li class="navigation-list-item"><a href="#" class="nav-list-item__link">services</a></li>
+            <li class="navigation-list-item"><a href="#" class="nav-list-item__link">portfolio</a></li>
+            <li class="navigation-list-item"><a href="#" class="nav-list-item__link">about</a></li>
+            <li class="navigation-list-item"><a href="#" class="nav-list-item__link">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="services">
+        <div class="container">
+          <div class="services-title">
+            <h2 class="services-title__item">services</h2>
+            <p class="services-title__description">Proin iaculis purus consequat sem cure.</p>
+          </div>
+          <ul class="service-list">
+            <li class="service-list-item fisrt">
+              <div class="service-list-item__icon-basket"></div>
+              <h3 class="service-list-item__title">E-Commerce</h3>
+              <p class="service-list-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio.</p>
+            </li>
+            <li class="service-list-item second">
+              <div class="service-list-item__icon-laptop"></div>
+              <h3 class="service-list-item__title">Responsive Web</h3>
+              <p class="service-list-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio.</p>
+            </li>
+            <li class="service-list-item third">
+              <div class="service-list-item__icon-locked"></div>
+              <h3 class="service-list-item__title">Web Security</h3>
+              <p class="service-list-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-info">
+        <div class="container">
+          <div class="contact-info-title">
+            <h2 class="contact-info-title__item">contact us</h2>
+            <p class="contact-info-title__description">Proin iaculis purus consequat sem cure.</p>
+          </div>
+          <form action="#" method="get" class="contact-form">
+            <div class="wrap-contact-form">
+              <div class="contact-form-items">
+                <input type="name" name="user-name" class="contact-form__input" placeholder="your name *" required minlength="3" />
+                <input type="email" name="user-email" class="contact-form__input" placeholder="your e-mail *" required />
+                <input type="text" name="user-subject" class="contact-form__input" placeholder="subject" />
+              </div>
+              <div class="textarea-wrap">
+                <textarea name="message" id="message-user" class="contact-form__message" placeholder="your message *" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contact-form__button" form="data">send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
