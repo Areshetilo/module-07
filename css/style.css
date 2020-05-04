@@ -299,6 +299,7 @@ img {
   border-radius: 3px;
   transition: 0.2s;
   outline: none;
+  cursor: pointer;
 }
 
 .contact-form__button:hover {
